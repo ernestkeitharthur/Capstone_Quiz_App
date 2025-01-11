@@ -1,3 +1,62 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Body Styling */
+body {
+  @apply bg-gray-100 text-gray-900 font-sans;
+}
+
+/* Navbar Styling */
+nav {
+  @apply bg-blue-500 text-white;
+}
+nav ul {
+  @apply flex space-x-4;
+}
+nav a {
+  @apply text-white hover:underline;
+}
+
+/* Button Styling */
+button {
+  @apply bg-blue-500 text-white py-2 px-4 rounded;
+}
+button:hover {
+  @apply bg-blue-600;
+}
+
+/* Form Elements Styling */
+form label {
+  @apply block text-sm font-medium text-gray-700 mt-4;
+}
+form input, form select {
+  @apply block w-full px-3 py-2 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500;
+}
+
+/* Page Heading Styling */
+h1 {
+  @apply text-2xl font-bold mb-4;
+}
+
+/* Card Styling */
+.card {
+  @apply bg-white p-4 rounded-lg shadow-md;
+}
+.card-header {
+  @apply font-bold text-lg mb-2;
+}
+.card-content {
+  @apply text-sm;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  nav {
+    @apply p-6;
+  }
+  .card {
+    @apply max-w-xl mx-auto;
+  }
+}
